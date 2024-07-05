@@ -12,6 +12,7 @@ import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
 
 import ProtectedRoutes from "./components/commons/Protected";
+import Details from "./components/home/Details";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,6 +32,10 @@ function App() {
         {
           path: '/contact',
           element: <Contact />
+        },
+        {
+          path: '/product/:id',
+          element: <Details />
         }
       ]
     },
